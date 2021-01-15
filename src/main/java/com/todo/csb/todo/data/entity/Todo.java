@@ -1,6 +1,7 @@
 package com.todo.csb.todo.data.entity;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name="todos")
@@ -12,7 +13,7 @@ public class Todo {
     @Column(name="description")
     private String description;
     @Column(name="created")
-    private String created;
+    private Timestamp created;
     @Column(name="completed")
     private boolean completed;
 
@@ -32,11 +33,11 @@ public class Todo {
         this.description = description;
     }
 
-    public String getCreated() {
+    public Timestamp getCreated() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreated(Timestamp created) {
         this.created = created;
     }
 

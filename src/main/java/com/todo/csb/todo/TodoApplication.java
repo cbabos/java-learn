@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.xml.crypto.Data;
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @SpringBootApplication
@@ -47,10 +45,10 @@ public class TodoApplication {
             todoRepository.save(newTodo);
         }
 
-        private String GetTimestamp() {
+        private Timestamp GetTimestamp() {
             Date date = new Date();
             Timestamp ts = new Timestamp(date.getTime());
-            return ts.toString();
+            return ts;
         }
     }
 }
