@@ -13,17 +13,8 @@ public class Todo {
     private String description;
     @Column(name="created")
     private String created;
-
-    public String getCreated() {
-        return created;
-    }
-
-    public void setCreated(String created) {
-        this.created = created;
-    }
-
     @Column(name="completed")
-    private byte completed;
+    private boolean completed;
 
     public long getId() {
         return id;
@@ -41,11 +32,19 @@ public class Todo {
         this.description = description;
     }
 
-    public byte getCompleted() {
+    public String getCreated() {
+        return created;
+    }
+
+    public void setCreated(String created) {
+        this.created = created;
+    }
+
+    public boolean isCompleted() {
         return completed;
     }
 
-    public void setCompleted(byte completed) {
+    public void setCompleted(boolean completed) {
         this.completed = completed;
     }
 }
