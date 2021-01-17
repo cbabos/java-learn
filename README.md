@@ -21,6 +21,14 @@ You'll need a Java IDE (I'm using [intelliJ IDEA](https://www.jetbrains.com/idea
 - [Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database) by [baeldung](https://www.baeldung.com/author/baeldung/)
 
 ## Changelog
+### 2021-01-17
+- Added PUT/DELETE/GET methods to Todo controller
+
+### 2021-01-15
+- Added Postgres Docker init script
+- Replaced H2 with Postgres 
+- Updated Todo entity for Postgres (switched DATETIME to TIMESTAMP)
+
 ### 2021-01-14 
 - Created the initial project
 - Created an initial schema and added dummy data (SQL)
